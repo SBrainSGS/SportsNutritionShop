@@ -60,7 +60,7 @@
                 <button class="add-to-cart">Положить в корзину</button>
             </div>
             <div class="product-item">
-                <img src="whey-protein.png" alt="Whey Protein">
+                <img src="{{asset('storage/assets/goods_previews/whey_protein.jpg')}}" alt="Whey Protein">
                 <h3>Whey Protein 2268 гр</h3>
                 <p>RPS Nutrition</p>
                 <p class="price">2210 руб</p>
@@ -69,7 +69,7 @@
                 <button class="add-to-cart">Положить в корзину</button>
             </div>
             <div class="product-item">
-                <img src="lean-protein-shake.png" alt="Lean Protein Shake">
+                <img src="{{asset('storage/assets/goods_previews/lean_protein.jpg')}}" alt="Lean Protein Shake">
                 <h3>Lean Protein Shake 750 гр</h3>
                 <p>VP Lab Nutrition</p>
                 <p class="price">2220 руб</p>

@@ -1,0 +1,244 @@
+/* Основные стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Основная навигация */
+.main-nav {
+    background-color: #444;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-icons input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+/* Промо блок */
+.promo {
+    display: flex;
+    justify-content: left;
+    padding: 50px 100px;
+    background: url('../pictures/background/man.jpg') no-repeat center center/cover;
+    height: 70vh;
+    position: relative;
+    z-index: 1;
+}
+
+.promo::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.5); /* затемнение фона */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.promo-text {
+    max-width: 50%;
+}
+
+.promo-text h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.promo-text h1 span {
+    color: #ffc107;
+}
+
+.promo-text p {
+    font-size: 1.2em;
+}
+
+.add-to-cart {
+    background-color: #ffc107;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.promo-image img {
+    max-height: 300px;
+    margin: 20px 0;
+}
+
+/* Хиты продаж */
+.best-sellers {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.best-sellers h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.product-carousel {
+    display: flex;
+    gap: 20px;
+    overflow: auto;
+}
+
+.product-item {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 0 0 20%;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-item p {
+    margin: 5px 0;
+}
+
+.price {
+    color: #e53935;
+    font-size: 1.5em;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.stock {
+    color: green;
+}
+
+.carousel-indicators {
+    margin-top: 20px;
+}
+
+.carousel-indicators span {
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.carousel-indicators span.active {
+    background-color: #ffc107;
+}
+
+/* Почему нас выбирают */
+.why-choose-us {
+    padding: 50px 20px;
+    background-color: #333;
+    text-align: center;
+    color: white;
+}
+
+.why-choose-us h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.feature-item {
+    text-align: center;
+}
+
+.feature-item img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Футер */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links li {
+    margin: 0;
+}
+
+.footer-links a {
+    color: white;
+}
+
+.footer-contact {
+    text-align: right;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer-socials img {
+    height: 20px;
+    cursor: pointer;
+}

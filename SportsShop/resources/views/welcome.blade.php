@@ -21,8 +21,8 @@
         </ul>
         <div class="nav-icons">
             <input type="text" placeholder="Поиск">
-            <img src="search-icon.png" alt="Поиск">
-            <img src="cart-icon.png" alt="Корзина">
+            <img src="{{asset('assets/icons/search.svg')}}" alt="Поиск">
+            <img src="{{asset('assets/icons/cart.png')}}" alt="Корзина">
         </div>
     </nav>
 </header>
@@ -89,15 +89,21 @@
         <h2>Почему нас выбирают</h2>
         <div class="features">
             <div class="feature-item">
-                <img src="shipping-icon.png" alt="Доставка по всей России">
+                <div class="icon-circle">
+                    <img src="{{asset('assets/icons/building.svg')}}" alt="Доставка по всей России">
+                </div>
                 <p>Доставка по всей России</p>
             </div>
             <div class="feature-item">
-                <img src="discount-icon.png" alt="Низкие цены, акции и скидки">
+                <div class="icon-circle">
+                    <img src="{{asset('assets/icons/coins.svg')}}" alt="Низкие цены, акции и скидки">
+                </div>
                 <p>Низкие цены, акции и скидки</p>
             </div>
             <div class="feature-item">
-                <img src="certified-icon.png" alt="Сертифицированная продукция">
+                <div class="icon-circle">
+                    <img src="{{asset('assets/icons/certify.svg')}}" alt="Сертифицированная продукция">
+                </div>
                 <p>Сертифицированная продукция</p>
             </div>
         </div>
@@ -108,7 +114,6 @@
     <div class="footer-content">
         <div class="footer-logo">
             <img src="logo.png" alt="Body Maker">
-            <p>Спортивное питание</p>
         </div>
         <ul class="footer-links">
             <li><a href="#">Каталог</a></li>
@@ -121,9 +126,15 @@
             <p>+7 (923) 345-45-45</p>
             <p>body_sport@gmail.com</p>
             <div class="footer-socials">
-                <img src="vk-icon.png" alt="VK">
-                <img src="insta-icon.png" alt="Instagram">
-                <img src="fb-icon.png" alt="Facebook">
+                <div class="social-icon-circle">
+                    <img src="{{asset('assets/icons/vk.svg')}}" alt="VK">
+                </div>
+                <div class="social-icon-circle">
+                    <img src="{{asset('assets/icons/instagram.svg')}}" alt="Instagram">
+                </div>
+                <div class="social-icon-circle">
+                    <img src="{{asset('assets/icons/facebook.svg')}}" alt="Facebook">
+                </div>
             </div>
         </div>
     </div>

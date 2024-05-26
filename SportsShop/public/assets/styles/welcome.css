@@ -14,7 +14,7 @@ a {
 /* Основная навигация */
 .main-nav {
     background-color: #444;
-    padding: 15px 20px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,6 +34,10 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.nav-icons img {
+    max-height: 20px;
 }
 
 .nav-icons input[type="text"] {
@@ -190,35 +194,52 @@ a {
     text-align: center;
 }
 
+/* Стили для белых кружков */
+.icon-circle {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+}
+
 .feature-item img {
     height: 50px;
-    margin-bottom: 10px;
 }
 
 /* Футер */
 footer {
     background-color: #222;
     color: white;
-    padding: 20px 50px;
+    padding: 40px 20px;
+}
+
+.footer-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    gap: 20px;
 }
 
 .footer-logo {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 .footer-logo img {
     height: 50px;
-    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .footer-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .footer-links li {
@@ -227,19 +248,40 @@ footer {
 
 .footer-links a {
     color: white;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffc107;
 }
 
 .footer-contact {
-    text-align: right;
+    text-align: center;
+}
+
+.footer-contact p {
+    margin: 5px 0;
 }
 
 .footer-socials {
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    gap: 15px;
     margin-top: 10px;
 }
 
+.footer-socials .social-icon-circle {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer-socials img {
+    width: 20px;
     height: 20px;
     cursor: pointer;
 }

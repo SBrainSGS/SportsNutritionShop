@@ -1,0 +1,123 @@
+/* Основные стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Основная навигация */
+.main-nav {
+    background-color: #444;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-icons img {
+    max-height: 20px;
+}
+
+.nav-icons input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+
+/* Футер */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links li {
+    margin: 0;
+}
+
+.footer-links a {
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffc107;
+}
+
+.footer-contact {
+    text-align: center;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-socials .social-icon-circle {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-socials img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}

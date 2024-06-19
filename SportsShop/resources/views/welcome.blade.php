@@ -11,6 +11,7 @@
     @include('partials.header')
 </header>
 <main>
+    <!-- Промо блок -->
     <div class="promo">
         <div class="promo-text">
             <h1>Акция <span>2+1</span></h1>
@@ -21,53 +22,6 @@
             <button class="add-to-cart">Положить в корзину</button>
         </div>
     </div>
-    <!-- Хиты продаж -->
-    <section class="best-sellers">
-        <h2>Хиты продаж</h2>
-        <div class="product-carousel">
-            <div class="product-item">
-                <img src="{{asset('storage/assets/goods_previews/bcaa12000.png')}}" alt="BCAA Powder">
-                <h3>BCAA Powder 12000 228 гр</h3>
-                <p>Ultimate Nutrition</p>
-                <p class="price">750 руб</p>
-                <p class="old-price">1050 руб</p>
-                <p class="stock">В наличии</p>
-                <button class="add-to-cart">Положить в корзину</button>
-            </div>
-            <div class="product-item">
-                <img src="{{asset('storage/assets/goods_previews/AnimalPak44.png')}}" alt="Animal Pak">
-                <h3>Animal Pak 44 пак.</h3>
-                <p>Universal Nutrition</p>
-                <p class="price">2990 руб</p>
-                <p class="old-price">3490 руб</p>
-                <p class="stock">В наличии</p>
-                <button class="add-to-cart">Положить в корзину</button>
-            </div>
-            <div class="product-item">
-                <img src="{{asset('storage/assets/goods_previews/whey_protein.jpg')}}" alt="Whey Protein">
-                <h3>Whey Protein 2268 гр</h3>
-                <p>RPS Nutrition</p>
-                <p class="price">2210 руб</p>
-                <p class="old-price">2880 руб</p>
-                <p class="stock">В наличии</p>
-                <button class="add-to-cart">Положить в корзину</button>
-            </div>
-            <div class="product-item">
-                <img src="{{asset('storage/assets/goods_previews/lean_protein.jpg')}}" alt="Lean Protein Shake">
-                <h3>Lean Protein Shake 750 гр</h3>
-                <p>VP Lab Nutrition</p>
-                <p class="price">2220 руб</p>
-                <p class="old-price">2800 руб</p>
-                <p class="stock">В наличии</p>
-                <button class="add-to-cart">Положить в корзину</button>
-            </div>
-        </div>
-        <div class="carousel-indicators">
-            <span class="active">01</span>
-            <span>02</span>
-            <span>03</span>
-        </div>
-    </section>
     <!-- Почему нас выбирают -->
     <section class="why-choose-us">
         <h2>Почему нас выбирают</h2>
@@ -93,7 +47,6 @@
         </div>
     </section>
 </main>
-<!-- Футер -->
 <footer>
     @include('partials.footer')
 </footer>

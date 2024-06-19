@@ -1,19 +1,20 @@
 @import "main.css";
 
 .product-grid {
-    padding: 50px 20px;
+    padding: 50px 50px 50px 20px;
     text-align: center;
 }
 
 .product-grid h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    color: #ff6600;
 }
 
 .product-grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 50px;
     justify-items: center;
 }
 
@@ -29,8 +30,8 @@
 }
 
 .product-item img {
-    max-width: 100%;
-    height: auto;
+    width: auto;
+    max-height: 100px;
 }
 
 .product-item h3 {
@@ -67,4 +68,38 @@
 .pagination .page-item.active .page-link {
     background-color: #ffc107;
     border-color: #ffc107;
+}
+
+/* Стили для фильтра категории */
+.category-filter {
+    margin-bottom: 20px;
+}
+
+.category-button {
+    padding: 10px 20px;
+    background-color: #505050;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.category-button.selected {
+    background-color: #ff6600;
+    color: black;
+}
+
+.add-to-basket {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-basket:hover {
+    background-color: #e55e00;
 }

@@ -17,8 +17,6 @@ return new class extends Migration
             $table->string('fio');
             $table->string('number');
             $table->string('password');
-            $table->string('role_name');
-            $table->foreign('role_name')->references('role_name')->on('roles')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

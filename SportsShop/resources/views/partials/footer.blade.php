@@ -4,12 +4,11 @@
     </div>
     <ul class="footer-links">
         <li><a href="{{url('/catalog')}}">Каталог</a></li>
-        <li><a href="#">Скидки</a></li>
-        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="{{url('/delivery')}}">Доставка и оплата</a></li>
         <li><a href="#">О компании</a></li>
     </ul>
     <div class="footer-contact">
-        <p>+7 (923) 345-45-45</p>
+        <p>+7 (978) 241-85-17</p>
         <p>body_sport@gmail.com</p>
         <div class="footer-socials">
             <div class="social-icon-circle">

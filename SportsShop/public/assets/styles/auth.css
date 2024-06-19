@@ -1,0 +1,64 @@
+@import "main.css";
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-box {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.form-box h2 {
+    color: #ff6600;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 10px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+}
+
+.btn {
+    width: 250px;
+    padding: 10px;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+
+.switch-form {
+    margin-top: 15px;
+}
+
+.switch-form a {
+    color: #ffc107;
+    text-decoration: underline;
+    cursor: pointer;
+}

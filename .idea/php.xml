@@ -130,6 +130,31 @@
       <path value="$PROJECT_DIR$/SportsShop/vendor/doctrine/lexer" />
       <path value="$PROJECT_DIR$/SportsShop/vendor/fakerphp/faker" />
       <path value="$PROJECT_DIR$/SportsShop/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/league/uri" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/league/uri-interfaces" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/phpstan/phpdoc-parser" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/spatie/php-structure-discoverer" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/spatie/laravel-package-tools" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/spatie/laravel-data" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/amphp/amp" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/amphp/cache" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/amphp/byte-stream" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/amphp/parallel" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/amphp/dns" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/amphp/pipeline" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/amphp/parser" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/amphp/serialization" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/amphp/process" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/amphp/sync" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/amphp/socket" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/amphp/windows-registry" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/kelunik/certificate" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/revolt/event-loop" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/daverandom/libdns" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/SportsShop/vendor/spatie/laravel-permission" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />

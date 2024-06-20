@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Spatie\Permission\Traits\HasRoles;
+use App\Models\Order;
 
 class User extends Authenticatable
 {
@@ -38,5 +39,10 @@ class User extends Authenticatable
     public function getAuthPassword()
     {
         return $this->password; // Захешированный пароль пользователя
+    }
+
+    public function orders()
+    {
+        return $this->hasMany(Order::class, 'user_id');
     }
 }

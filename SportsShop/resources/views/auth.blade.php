@@ -12,6 +12,15 @@
 </header>
 <div class="form-container">
     <div class="form-box">
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
         <form id="login-form" action="{{ route('login') }}" method="POST">
             @csrf
             <h2>Авторизация</h2>

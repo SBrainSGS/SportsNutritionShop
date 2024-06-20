@@ -35,9 +35,21 @@ use App\Http\Controllers\AuthController;
 
 Route::post('/login', [AuthController::class, 'login'])->name('login');
 Route::post('/register', [AuthController::class, 'register'])->name('register');
-Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
 use App\Http\Controllers\BasketController;
 
 Route::get('/basket', [BasketController::class, 'getBasket'])->name('basket');
 Route::post('/basket/add', [BasketController::class, 'addToBasket'])->name('add_to_basket');
+
+use App\Http\Controllers\OrderController;
+
+Route::get('/checkout', [BasketController::class, 'getBasketForCheckout'])->name('checkout');
+Route::post('/checkout/add', [OrderController::class, 'placeOrder']);
+Route::get('/orders', [OrderController::class, 'showOrders']);
+
+Route::middleware(['auth', 'role:admin'])->group(function () {
+    Route::get('/products', [ProductController::class, 'getAllProducts'])->name('products');
+
+    Route::post('/products/add', [ProductController::class, 'createProduct']);
+});

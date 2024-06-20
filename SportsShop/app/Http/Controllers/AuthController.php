@@ -45,7 +45,7 @@ class AuthController extends Controller
         $user->password = Hash::make($request->password);
         $user->fio = $request->fio;
         $user->number = $request->phone;
-        $user->role_name = 'Покупатель';
+        $user->assignRole('user');
         $user->save();
 
 

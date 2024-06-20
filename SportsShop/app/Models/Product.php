@@ -10,6 +10,9 @@ class Product extends Model
     use HasFactory;
 
     protected $primaryKey = 'product_id';
+    public $timestamps = false;
+
+    protected $fillable = ['category_id', 'manufacturer', 'product_name', 'description', 'price', 'promo_price', 'amount', 'sold'];
 
     public function image()
     {
@@ -19,5 +22,10 @@ class Product extends Model
     public function category()
     {
         return $this->belongsTo(Category::class, 'category_id');
+    }
+
+    public function orderItems()
+    {
+        return $this->hasMany(OrderItem::class, 'product_id');
     }
 }

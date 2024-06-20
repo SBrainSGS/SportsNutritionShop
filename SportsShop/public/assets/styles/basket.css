@@ -1,1 +1,107 @@
 @import "main.css";
+
+.btn {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e65c00;
+}
+
+.basket-items {
+    width: 1000px;
+    margin: 10px auto;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.basket-items h2 {
+    text-align: center;
+    padding: 0 10px 10px 10px;
+    color: #ff6600;
+}
+
+.basket-items-container {
+    margin-top: 20px;
+}
+
+.basket-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.basket-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #444;
+}
+
+.item-info {
+    flex: 1;
+}
+
+.item-name {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.item-description {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.item-price {
+    font-size: 16px;
+}
+
+.item-actions {
+    margin-left: 10px;
+}
+
+.btn-remove {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-remove:hover {
+    background-color: #c82333;
+}
+
+.basket-summary {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.total-price {
+    color: #ff6600;
+    font-size: 18px;
+}
+
+.total-price span {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}

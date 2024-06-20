@@ -13,8 +13,23 @@ class BasketController extends Controller
         // Получаем все записи из таблицы baskets для текущего пользователя
         $baskets = Basket::where('user_id', auth()->id())->with('product')->get();
 
+        // Вычисляем общую стоимость всех товаров в корзине
+        $totalPrice = $baskets->sum('product.price');
+
         // Возвращаем представление с переданными данными
-        return view('basket', ['baskets' => $baskets]);
+        return view('basket', ['baskets' => $baskets, 'totalPrice' => $totalPrice]);
+    }
+
+    public function getBasketForCheckout()
+    {
+        // Получаем все записи из таблицы baskets для текущего пользователя
+        $baskets = Basket::where('user_id', auth()->id())->with('product')->get();
+
+        // Вычисляем общую стоимость всех товаров в корзине
+        $totalPrice = $baskets->sum('product.price');
+
+        // Возвращаем представление с переданными данными
+        return view('checkout', ['baskets' => $baskets, 'totalPrice' => $totalPrice]);
     }
 
     public function addToBasket(Request $request)

@@ -36,7 +36,7 @@
             <div class="product-item">
                 <a href="{{ route('catalog.getProduct', ['id' => $product->product_id]) }}">
                     @if ($product->image)
-                        <img src="{{ asset($product->image->path) }}" alt="{{ $product->name }}">
+                        <img src="{{ asset('storage/'.$product->image->path) }}" alt="{{ $product->name }}">
                     @endif
                     <h3>{{ $product->product_name }}</h3>
                     <p class="price">{{ $product->price }} руб</p>

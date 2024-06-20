@@ -18,11 +18,24 @@
         @if($baskets->isEmpty())
             <h3>Корзина пуста</h3>
         @else
-            @foreach($baskets as $basket)
-                <div class="basket-item">
-                    <h3>{{ $basket->product->product_name }}</h3>
-                </div>
-            @endforeach
+            <ul class="basket-list">
+                @foreach($baskets as $basket)
+                    <li class="basket-item">
+                        <div class="item-info">
+                            <h3 class="item-name">{{ $basket->product->product_name }}</h3>
+                            <p class="item-description">{{ $basket->product->description }}</p>
+                        </div>
+                        <div class="item-price">{{ $basket->product->price }} ₽</div>
+                        <div class="item-actions">
+                            <button class="btn btn-remove">Удалить</button>
+                        </div>
+                    </li>
+                @endforeach
+            </ul>
+            <div class="basket-summary">
+                <p class="total-price">Итого: <span>{{ $totalPrice }} ₽</span></p>
+                <a href="{{url('/checkout')}}"><button class="btn">Оформить заказ</button></a>
+            </div>
         @endif
     </div>
 </section>

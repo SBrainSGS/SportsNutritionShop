@@ -10,6 +10,7 @@ class Image extends Model
     use HasFactory;
 
     protected $primaryKey = 'image_id';
+    public $timestamps = false;
 
     public function product()
     {
